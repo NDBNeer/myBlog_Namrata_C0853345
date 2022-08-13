@@ -20,13 +20,14 @@ section{
 
 p a{color:#1b0260; text-decoration: none; padding:10px;}
 p a:hover{text-decoration:underline; color: #306014}
-table
+table, th, td
 {
     width:100%;
-    border:1px;
+    border:1px solid;
     border-spacing: 3px;
     border-collapse:separate;
-    margin:5px;
+    margin:3px;
+    padding: 3px;
 }
 h1{margin:10px 0;
 }
