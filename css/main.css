@@ -173,3 +173,8 @@ footer{
     display: table;
     clear: both;
 }
+@media (max-width: 500px) {
+    .grid-container {
+        display: block;
+    }
+}
