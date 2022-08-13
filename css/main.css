@@ -156,6 +156,12 @@ footer{
     margin: 5px;
     padding: 5px;
 }
+.mycoll
+{
+    width: 30%;
+    margin: 5px;
+    padding: 5px;
+}
 .column {
     float: left;
     width: 50%;
