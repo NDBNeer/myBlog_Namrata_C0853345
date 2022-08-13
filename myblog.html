@@ -1,10 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>My Blogs</title>
+    <meta charset="utf-8">
+    <title>Namrata's Blog</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
 </head>
-<body>
 
+<body>
+<div class="container">
+    <header>Namrata Barot</header>
+    <nav float="left"><a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="myblog.html">Blogs</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact Me</a></nav>
+    <img src="images/blog.png" width="100%" height="350px">
+    <div class="mycol">
+        <div class="row">
+            <div class="column"><p>I am an experienced Android Developer with 4+ years of development. I've been part of successful start-up companies and created many published apps from scratch. Proven and tested to bring conceptual ideas to fully functional application. Strong Java programming skills including low-level performance optimizations and memory management. I not only know how to make an application work but also know how to make it work fast and smoothly. Working with third-party libraries (Firebase, RxJava2, Retrofit 2, OkHttp, Gson, etc. ) to maximize development efficiency and API.I get to create things from the figment of my imagination also I’m industrious to do my work, Moreover, Design and develop new things is my passion.</p></div>
+            <div class="column">
+                <div class="container2">
+                    <!--<img src="images/skill.png" alt="Avatar" class="image">
+                    <div class="overlay">
+                        <div class="text">Namrata Barot</div>
+                    </div>-->
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="images/woman.png" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/android.jpg" style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="images/ndb2.png" style="width:100%">
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer><div class="footer-content">&copy; Copyright 2022 Namrata Barot</div></footer>
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+
+</div>
 </body>
 </html>
