@@ -20,7 +20,7 @@ section{
 
 p a{color:#1b0260; text-decoration: none; padding:10px;}
 p a:hover{text-decoration:underline; color: #306014}
-table, th, td
+/*table, th, td
 {
     width:100%;
     border:1px solid;
@@ -28,6 +28,24 @@ table, th, td
     border-collapse:separate;
     margin:3px;
     padding: 3px;
+}*/
+table {
+
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin:3px;
+    padding: 3px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
 }
 h1{margin:10px 0;
 }
